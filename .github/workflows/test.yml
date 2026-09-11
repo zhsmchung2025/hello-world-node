@@ -1,0 +1,30 @@
+name: Node.js Test Workflow
+
+# 1. TRIGGER: When should this run?
+on:
+  push:
+    branches: [ "main" ] # Run when code is pushed to the main branch
+  pull_request:
+    branches: [ "main" ] # Run when a pull request targets the main branch
+
+# 2. JOBS: What should happen?
+jobs:
+  build-and-test:
+    # 3. ENVIRONMENT: What kind of computer should GitHub use?
+    runs-on: ubuntu-latest 
+
+    # 4. STEPS: The sequence of tasks
+    steps:
+    # Step A: Get the code from the repository
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # Step B: Install Node.js on the virtual machine
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20' # Use Node version 20
+
+    # Step C: Run the actual test
+    - name: Run Hello World Script
+      run: node index.js
