@@ -36,6 +36,7 @@ test("add handles floating point numbers", () => {
 // exactly the point -- it shows the unit tests catching a wrong addition.
 // Delete this block once the demo is done.
 // ---------------------------------------------------------------------------
+/*
 test("DEMO addWrong(1, 1) should return 2 -> FAILS (returns '11')", () => {
   assert.strictEqual(addWrong(1, 1), 2);
 });
@@ -43,3 +44,4 @@ test("DEMO addWrong(1, 1) should return 2 -> FAILS (returns '11')", () => {
 test("DEMO addWrong(1, 3) should return 4 -> FAILS (returns '13')", () => {
   assert.strictEqual(addWrong(1, 3), 4);
 });
+*/
