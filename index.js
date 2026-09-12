@@ -25,7 +25,7 @@ function addWrong(a, b) {
  * @returns {string} the hello world message
  */
 function helloWorld() {
-  return "Hello, World! I am simon";
+  return "Hello every one!";
 }
 
 // Only print when this file is executed directly (e.g. `node index.js`),
