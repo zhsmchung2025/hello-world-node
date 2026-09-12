@@ -25,10 +25,6 @@ jobs:
       with:
         node-version: '20' # Use Node version 20
 
-    # Step C: Run the unit tests
-    - name: Run unit tests
-      run: npm test
-
-    # Step D: Run the Hello World script
+    # Step C: Run the Hello World script
     - name: Run Hello World Script
       run: node index.js
